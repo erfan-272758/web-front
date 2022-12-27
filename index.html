@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <section class="main">
+      <article class="card first_card">
+        <div class="error gone" id="error_container">
+          <p id="error_msg"></p>
+        </div>
+        <div class="card_part">
+          <img id="profile_image" />
+          <div class="title">
+            <h1 id="title_name"></h1>
+            <h3 id="title_username"></h3>
+            <h3 id="title_loc"></h3>
+          </div>
+        </div>
+        <div class="card_part">
+          <p>
+            <pre id="description"></pre>
+          </p>
+        </div>
+      </article>
+      <article class="card second_card">
+        <form>
+          <input type="text" placeholder="Username" id="username" />
+          <button type="submit">Submit</button>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+*{
+    /* calculate width and height from border */
+    box-sizing: border-box;
+    font-family: Tahoma ;
+    padding: 0;
+    margin: 0;
+}
+.none{
+    display: none !important;
+}
+.gone{
+    opacity: 0;
+    z-index: -1;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* make elements center of parent */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+ }
+
+ .main::after{
+    /* background image with blur filter */
+    content: "";
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: url("./assets/bg.jpg") center no-repeat;
+    background-size: cover;
+    filter:blur(10px)
+ }
+
+
+.card{
+    min-height: 60%;
+    background-color: #fafafaaa;
+    padding:10px;
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px #aaa;
+    position: relative;
+    overflow: hidden;
+}
+
+.first_card{
+    width: 60%;
+}
+
+.error{
+    /* to cover all parent */
+    z-index: 100;
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    background-color: #fafafa;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.error p{
+    font-size: 20px;
+    color: rgb(194, 29, 7);
+}
+
+.card_part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px;
+    margin: 15px 0;
+}
+
+.card_part img{
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    margin-right: 20px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.title *{
+    margin: 10px 0;
+}
+
+.title h1{
+    font-size: 25px;
+}
+
+.title h3{
+    font-size: 18px;
+}
+
+.description p{
+    font-size: 10px;
+}
+
+.second_card{
+    width: 30%;
+}
+
+.second_card form{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_card form * {
+    margin: 25px 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+}
